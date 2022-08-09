@@ -1,0 +1,145 @@
+/* -------------------------------Футер-------------------------------------- */
+.footer {
+  background: $footer-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $footer-logo-color;
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__logo__web {
+  color: $accent-color;
+}
+.footer-address {
+  display: block;
+}
+.footer-adress__text {
+  font-style: normal;
+  line-height: 1.71;
+  color: $p-text-color;
+}
+.footer-adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-adress__link {
+  font-style: normal;
+  line-height: 1.71;
+  color: $footer-link;
+  transition: color 250ms $animation;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+/* Контакты */
+.connect {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: $footer-logo-color;
+}
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social__list {
+  display: flex;
+}
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social__icon {
+  display: flex;
+  color: $footer-logo-color;
+  fill: currentColor;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms $animation;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer__subscribe {
+  display: block;
+  margin-left: 93px;
+}
+.footer-form__title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $footer-logo-color;
+}
+.footer-form__container {
+  display: flex;
+}
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0;
+  padding: 15px 16px;
+  color: $p-text-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+.footer-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $btn-text-color;
+  background-color: $accent-color;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms $animation, filter $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $hero-btn-hover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.footer-form__icon {
+  display: block;
+  margin-left: 10px;
+  fill: currentColor;
+}

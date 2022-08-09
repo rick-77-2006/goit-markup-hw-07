@@ -1,0 +1,56 @@
+/* Особености компании */
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: row;
+}
+.features__li {
+  display: block;
+  &::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $section-background;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features__item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-text-color;
+  letter-spacing: $main-letter-spacing;
+  margin-bottom: 10px;
+}
+
+.features__text {
+  line-height: 1.71;
+  color: $primary-text-color;
+  font-weight: 400;
+  letter-spacing: $main-letter-spacing;
+  font-size: 14px;
+}
+.antenna::before {
+  background-image: url(../img/features/antenna.svg);
+}
+.clock::before {
+  background-image: url(../img/features/clock.svg);
+}
+.diagram::before {
+  background-image: url(../img/features/diagram.svg);
+}
+.astronaut::before {
+  background-image: url(../img/features/astronaut.svg);
+}
