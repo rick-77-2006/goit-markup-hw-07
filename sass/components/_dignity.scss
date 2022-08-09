@@ -1,0 +1,76 @@
+.dignity__list {
+  display: flex;
+}
+
+.dignity__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.dignity__icon {
+  &::before {
+    display: block;
+    content: "";
+    border-radius: 4px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.dignity__details {
+  &::before {
+    background-image: url("../images/antenna.svg");
+  }
+}
+
+.dignity__punctuality {
+  &::before {
+    background-image: url("../images/clock.svg");
+  }
+}
+
+.dignity__planning {
+  &::before {
+    background-image: url("../images/diagram.svg");
+  }
+}
+.dignity__technology {
+  &::before {
+    background-image: url("../images/astronaut.svg");
+  }
+}
+
+.dignity__tile--hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.dignity__name {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $dignity-article-text-color;
+}
+
+.dignity__description {
+  line-height: 24px;
+  color: $dignity-description-text-color;
+  margin-bottom: 0;
+}
