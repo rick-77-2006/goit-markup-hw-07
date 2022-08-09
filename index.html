@@ -1,47 +1,42 @@
-<!-- Домашнее задание 7.14 -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio by Rick</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet"/>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/react-is/18.0.0/umd/react-is.production.min.js"
-        integrity="sha512-NQfzurHMH668fWCZsHWuaNRNhtc7hLksb4xfisJ1Jx8oLa2bxoxnWSuAOekV6Hr0+dd5ydaJSwyS67Qv4wKzdQ=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer">
-    </script>
-    <link rel="stylesheet" href="./css/styles.css"/>
-</head>
-
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Web Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
   <body>
+    <!-- Header -->
 
     <header class="header">
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="index.html" class="logo" >
-              Web
-              <span class="logo--dark">Studio</span>
+            <a href="index.html" class="logo"
+              >Web<span class="logo--dark">Studio</span>
             </a>
             <ul class="header__list">
               <li class="header__item">
                 <a
                   href="./index.html"
-                  class="header__link header__link--current">
-                  Студия
+                  class="header__link header__link--current"
+                  >Студия
                 </a>
               </li>
               <li class="header__item">
-                <a href="./portfolio.html" class="header__link">
-                  Портфолио
-                </a>
+                <a href="./portfolio.html" class="header__link">Портфолио</a>
               </li>
               <li class="header__item">
                 <a href="" class="header__link">Контакты</a>
@@ -54,37 +49,37 @@
                 <svg class="contact__list--mail" width="16px" height="12px">
                   <use href="./images/icons-defs.svg#icon-mail"></use>
                 </svg>
-                  info@devstudio.com
-              </a>
+
+                info@devstudio.com</a
+              >
             </li>
             <li class="contact__item">
               <a href="tel:+380991111111" class="contact__link">
                 <svg
                   class="contact__list--smartphone"
                   width="10px"
-                  height="16px">
+                  height="16px"
+                >
                   <use href="./images/icons-defs.svg#icon-smartphone"></use>
                 </svg>
-                +38 099 111 11 11
-              </a>
+                +38 099 111 11 11</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </header>
     <main>
-
+      <!-- Hero -->
 
       <section class="hero__container">
         <div class="container">
-          <h1 class="hero__title">
-            ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
-          </h1>
-          <button class="button" data-modal-open>
-            Заказать услугу
-          </button>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
+
+      <!-- Dignity -->
 
       <section class="section">
         <div class="container">
