@@ -1,14 +1,19 @@
 .logo {
-  font-family: "Raleway";
+  text-decoration: none;
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: $primary-logo-color;
-  align-items: center;
-  display: block;
+  color: $web_hover_button_color;
+  letter-spacing: 0.03em;
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
-.logo-web {
-  color: $accent-color;
+
+.logo_2nd-part {
+  color: $black_color;
+}
+
+.footer__logo {
+  color: $white_color;
 }
