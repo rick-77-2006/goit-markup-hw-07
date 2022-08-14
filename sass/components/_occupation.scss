@@ -1,5 +1,7 @@
 .occupation {
-  padding-top: 0;
+  @media screen and(max-width: 1199px) {
+    display: none;
+  }
 }
 
 .occupation__title {

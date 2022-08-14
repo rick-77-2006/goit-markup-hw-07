@@ -1,5 +1,7 @@
 @import "./utils/variables";
 @import "./utils/base";
+@import "./components/mobile_menu";
+@import "./components/social__list";
 @import "./components/header";
 @import "./components/logo";
 @import "./components/contact__list";
@@ -13,4 +15,5 @@
 @import "./components/portfolio__list";
 @import "./components/clients";
 @import "./components/footer";
+@import "./components/subscribe";
 @import "./components/modal";

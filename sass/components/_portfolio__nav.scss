@@ -1,15 +1,30 @@
 .portfolio-nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 50px;
-  text-align: center;
+  @media screen and (min-width: 767px) {
+    justify-content: center;
+  }
 }
 
 .portfolio-nav__item {
   margin-right: 8px;
-
+  margin-bottom: 15px;
   &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
+  }
+  &:nth-last-of-type(2) {
+    margin-bottom: 0;
+  }
+  @media screen and(max-width: 479px) {
+    &:nth-last-of-type(2) {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and(min-width:767px) {
+    margin-bottom: 0;
   }
 }
 
